@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:panel_type",
+ "creation": "2024-12-11 12:39:14.881213",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_s0x6",
+  "amended_from",
+  "panel_type",
+  "panel_description",
+  "panel_type_id",
+  "is_residential_enabled",
+  "is_industrial_enabled",
+  "residential_default_watt_peak",
+  "industrial_default_watt_peak"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_s0x6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Panel Type",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "panel_type",
+   "fieldtype": "Data",
+   "label": "Panel Type",
+   "unique": 1
+  },
+  {
+   "fieldname": "panel_description",
+   "fieldtype": "Small Text",
+   "label": "Panel Description"
+  },
+  {
+   "fieldname": "panel_type_id",
+   "fieldtype": "Int",
+   "label": "Panel Type Id",
+   "unique": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_residential_enabled",
+   "fieldtype": "Check",
+   "label": "Is Residential Enabled"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_industrial_enabled",
+   "fieldtype": "Check",
+   "label": "Is Industrial Enabled"
+  },
+  {
+   "fieldname": "residential_default_watt_peak",
+   "fieldtype": "Float",
+   "label": "Residential Default Watt Peak",
+   "precision": "1"
+  },
+  {
+   "fieldname": "industrial_default_watt_peak",
+   "fieldtype": "Float",
+   "label": "Industrial Default Watt Peak",
+   "precision": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-17 17:50:17.309523",
+ "modified_by": "Administrator",
+ "module": "demo",
+ "name": "Panel Type",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "panel_type_id",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "panel_type"
+}

@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "NDCR-PRIC-.####",
+ "creation": "2024-12-18 08:10:18.892283",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_a6r0",
+  "amended_from",
+  "ndcr_pricing_id",
+  "max_system_size",
+  "min_system_size",
+  "panel_type_id",
+  "company_id",
+  "price",
+  "is_disabled"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_a6r0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ndcr Pricing",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "ndcr_pricing_id",
+   "fieldtype": "Int",
+   "label": "Ndcr Pricing Id"
+  },
+  {
+   "fieldname": "max_system_size",
+   "fieldtype": "Float",
+   "label": "Max System Size",
+   "precision": "2"
+  },
+  {
+   "fieldname": "min_system_size",
+   "fieldtype": "Float",
+   "label": "Min System Size",
+   "precision": "2"
+  },
+  {
+   "fieldname": "panel_type_id",
+   "fieldtype": "Int",
+   "label": "Panel Type Id"
+  },
+  {
+   "fieldname": "company_id",
+   "fieldtype": "Int",
+   "label": "Company Id"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "precision": "2"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_disabled",
+   "fieldtype": "Check",
+   "label": "Is Disabled"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-12-18 08:13:49.588492",
+ "modified_by": "Administrator",
+ "module": "demo",
+ "name": "Ndcr Pricing",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
